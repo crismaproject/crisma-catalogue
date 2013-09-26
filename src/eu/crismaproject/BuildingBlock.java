@@ -13,7 +13,8 @@ import java.net.URL;
 
 
 /**
- * A Functional Building Block of the CRISMA Framework Architecture.
+ * This catalogue item represents the description of a Functional Building Block 
+ * of the CRISMA Framework Architecture.
  *
  * @author Pascal Dihé <pascal.dihe@cismet.de>
  */
@@ -43,13 +44,14 @@ public class BuildingBlock
     public BuildingBlockType[] type;
     
     /**
-     * Short description (summary) of this Building Block. 
-     * Plaintext, maximum 3-5 lines.
+     * A short description (summary) of this Building Block. It consists of 
+     * plaintext only and is maximum 3-5 lines long. The summary may automatically 
+     * be extracted from the description.
      */
     public String summary;
     
     /**
-     * Long description of the Building Block. May include formatted text, 
+     * The long description of the Building Block. May include formatted text, 
      * pictures, etc. The description should describe the key functionality
      * of the Building Block and its position in the CRISMA Framework Architecture.
      */
@@ -63,7 +65,7 @@ public class BuildingBlock
     public BuildingBlock[] realtedBuildingBlocks;
     
     /**
-    * Software Components for this Building Block that have been selected, 
+    * Provides references to the Software Components for this Building Block that have been selected, 
     * extended or implemented by the CRISMA Consortium. One Building Block may
     * be realised by different Software Components, e.g. for the Data Integration
     * Building Block and the GIS Widget Building Block there exist different

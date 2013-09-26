@@ -12,7 +12,8 @@ package eu.crismaproject;
 import java.net.URL;
 
 /**
- * A Software Component that has been selected, extended or implemented by
+ * This catalogue item represents the description of a 
+ * Software Component that has been selected, extended or implemented by
  * the CRISMA Consortium to realise a certain Building Block.
  * 
  * @author Pascal Dihé <pascal.dihe@cismet.de>
@@ -25,7 +26,7 @@ public class SoftwareComponent
      * has been implemented from scratch.</li>
      * <li><strong>Extended</strong>: The Software Component is based on existing 
      * software which has been directly extended or adapted to suit the needs of CRISMA.</li>
-     * <li><strong>Extended</strong>: The Software Component is entirely based
+     * <li><strong>Used</strong>: The Software Component is entirely based
      * on existing software, no changes to the source code of the existing software 
      * are necessary or planned.</li></ul>
      */
@@ -35,7 +36,7 @@ public class SoftwareComponent
     }
     
     /**
-     * Reference to the Building Block that is realised by this Software Component.
+     * A reference to the Building Block that is realised by this Software Component.
      */
     public BuildingBlock buildingBlock;
     
@@ -46,7 +47,7 @@ public class SoftwareComponent
      * has been implemented from scratch.</li>
      * <li><strong>Extended</strong>: The Software Component is based on existing 
      * software which has been directly extended or adapted to suit the needs of CRISMA.</li>
-     * <li><strong>Extended</strong>: The Software Component is entirely based
+     * <li><strong>Used</strong>: The Software Component is entirely based
      * on existing software, no changes to the source code of the existing software 
      * are necessary or planned.</li></ul>
      */
@@ -54,13 +55,13 @@ public class SoftwareComponent
     
     
     /**
-     * Name of the owner of the background software If the development context of the Software Component is <em>Extended</em> or
+     * The Name of the owner of the background software, if the development context of the Software Component is <em>Extended</em> or
      * <em>Used</em>.
      */
     public String backgroundOwner;
     
      /**
-     * Name of the owner of the Software Component (foreground).
+     * The name of the owner of the Software Component (foreground).
      * If the development context of the Software Component is <em>Used</em>, 
      * this field is empty.
      */
@@ -79,26 +80,26 @@ public class SoftwareComponent
     public String[] type;
     
     /**
-     * This describes the development status of the Software Component, e.g.
-     * early prototype, preview version, final release, 
-     * no release available yet, etc.
+     * This field describes the development status of the Software Component, e.g.
+     * "early prototype", "preview version", "final release", "no release available yet", etc.
      */
     public String developmentStatus;
     
     /**
-     * Describes current version number of the Software Component, e.g. 1.0 
+     * This field describes the current version number of the Software Component, e.g. 1.0.
      */
     public String version;
     
     
     /**
-     * Short description (summary) of this Software Component. 
-     * Plaintext, maximum 3-5 lines.
+     * This field contains a short description (summary) the  Software Component. 
+     * It consists of plaintext only and is maximum 3-5 lines long. The summary 
+     * may automatically be extracted from the description.
      */
     public String summary;
     
     /**
-     * Long description of the Software Component. May include formatted text, bullet lists,
+     * The long description of the Software Component. May include formatted text, bullet lists,
      * pictures, etc. Additionally, the description should provide technical details 
      * on the usage of Software Component, e.g. Hardware Requirements, supported Operating Systems, 
      * requirements for the installation (database, etc.), and so on.
@@ -107,27 +108,27 @@ public class SoftwareComponent
     
     
     /**
-     * Name of the license of the background software on which the 
+     * The name of the license of the background software on which the 
      * Software Component is based. If the development context 
      * of the Software Component is <em>New</em>, this field is empty.
      */
     public String backgroundLicense;
     
     /**
-     * Name of the license of the Software Component (foreground) under which it is distributed 
+     * The name of the license of the Software Component (foreground) under which it is distributed 
      * by the CRISMA Consortium. If the development context of the Software Component
      * is <em>Used</em>, this field is empty.
      */
     public String license;
     
     /**
-     * A link to the detailed Implementation Plan of the Software Component. These documents
+     * A link to the detailed Development Plan of the Software Component. These documents
      * are currently hosted on the VTT workspace and are visible to registered users only.
      */
-    public URL implementationPlan;
+    public URL developmentPlan;
     
     /**
-     * Optional link to a website that describes the background software of this 
+     * An optional link to a website that describes the background software of this 
      * Software Component. Only relevant if the development context of the Software Component
      * is <em>Extended</em> or <em>Used</em>.
      */
