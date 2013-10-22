@@ -62,7 +62,7 @@ public class BuildingBlock
      * an SP4 Simulation Model, a reference to the respective <em>CRISMA Simulation Model</em>
      * should be provided.
      */
-    public BuildingBlock[] realtedBuildingBlocks;
+    public BuildingBlock[] relatedBuildingBlocks;
     
     /**
     * Provides references to the Software Components for this Building Block that have been selected, 
